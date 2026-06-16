@@ -1,0 +1,103 @@
+<header>
+<link rel="stylesheet" href="style.css">
+  <div class="logo">
+    <img src="https://i.ibb.co/VcMPqYmM/image.png" alt="РАФСКУЛ Логотип" class="logo-img">
+  </div>
+  <nav>
+    <a href="#about">О школе</a>
+    <a href="#courses">Курсы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <button class="btn-nav">Войти</button>
+</header>
+
+<section class="hero">
+  <h1>Онлайн-школа <span class="brand-name">РАФСКУЛ</span></h1>
+  <p>Курсы по подготовке к математике с 1 по 11 классы для любого уровня знаний.</p>
+  <div class="hero-buttons">
+    <a href="#courses" class="btn-primary">Выбрать курс</a>
+    <a href="#about" class="btn-secondary">Узнать больше</a>
+  </div>
+</section>
+
+<section id="courses" class="courses-section">
+  <h2>Наши программы обучения</h2>
+  
+  <div class="courses-grid">
+    <div class="course-card">
+      <div class="badge">Популярно</div>
+      <h3>Подготовка к ОГЭ / ЕГЭ</h3>
+      <p>Разбор всех типов задач, восполнение пробелов в геометрии и алгебре. Гарантия высоких баллов.</p>
+      <button class="btn-course btn-order" data-course="Подготовка к ОГЭ / ЕГЭ">Оставить заявку</button>
+    </div>
+
+    <div class="course-card">
+      <div class="badge premium">Премиум</div>
+      <h3>Математика 1–11 классы</h3>
+      <p>Повышение успеваемости, помощь с домашними заданиями и развитие логического мышления у ребенка.</p>
+      <button class="btn-course btn-order" data-course="Математика 1–11 классы">Оставить заявку</button>
+    </div>
+  </div>
+</section>
+
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3 id="modalTitle">Запись на курс</h3>
+    <p class="modal-subtitle">Оставьте ваши данные, и мы свяжемся с вами в течение 15 минут</p>
+    
+    <form id="tgForm">
+      <input type="hidden" id="chosenCourse" name="course">
+      
+      <div class="input-group">
+        <label for="userName">Ваше ФИО (родителя или ученика)</label>
+        <input type="text" id="userName" required placeholder="Например, Иван Иванов">
+      </div>
+      
+      <div class="input-group">
+        <label for="userPhone">Номер телефона</label>
+        <input type="tel" id="userPhone" required placeholder="+7 (999) 000-00-00">
+      </div>
+      
+      <button type="submit" class="btn-submit">Отправить заявку</button>
+    </form>
+  </div>
+</div>
+<section id="about" class="about-section">
+  <div class="about-container">
+    <h2 class="section-title">О нашей школе</h2>
+    <p class="about-subtitle">РАФСКУЛ — это пространство, где сложные математические формулы превращаются в простые и понятные логические цепочки. Мы помогаем ученикам не просто сдавать экзамены, а искренне любить и понимать предмет.</p>
+    
+    <div class="founders-block">
+      <h3 class="founders-title">Основатель и методист школы</h3>
+      <div class="founders-grid-single">
+        
+        <div class="founder-card premium-yellow">
+ <div class="founder-photo-container">
+  <img src="https://images2.imgbox.com/c8/83/KE6MVOz7_o.png" alt="Харумова Фатима Сулеймановна — РАФСКУЛ" class="founder-img">
+</div>
+          
+          <h4>Харумова Фатима Сулеймановна</h4>
+          <p class="founder-role">Методист РАФСКУЛ, Эксперт ЕГЭ по профильной математике</p>
+          
+          <div class="founder-achievements">
+            <span class="achievement-badge">Опыт работы более 8 лет</span>
+            <span class="achievement-badge">Эксперт по второй части ЕГЭ</span>
+          </div>
+          
+          <ul class="founder-list">
+            <li>Выпускница факультета физики и математики ДГПУ</li>
+            <li>Финалист республиканского конкурса «Молодой педагог — 2019»</li>
+            <li>Победитель районного конкурса «Молодой педагог — 2019»</li>
+            <li>Автор образовательных программ и методических материалов</li>
+            <li>Разработчик авторских методик обучения математике</li>
+          </ul>
+          
+          <p class="founder-bio"><strong>Главная цель:</strong> сделать математику понятной каждому ученику и помочь достичь высоких академических результатов, избавив от страха перед сложными задачами и экзаменами.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
